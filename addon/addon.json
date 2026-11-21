@@ -1,10 +1,9 @@
 {
-  "ignore": [],
+  "title": "[PILL PACK]",
+  "type": "npc",
   "tags": [
     "realism",
-    "cartoon",
-    "fun"
+    "cartoon"
   ],
-  "title": "[PILL PACK]",
-  "type": "npc"
+  "ignore": []
 }
