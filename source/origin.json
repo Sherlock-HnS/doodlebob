@@ -4,8 +4,8 @@
   "title": "[PILL PACK] DOODLEBOB",
   "author": "Blastnit",
   "status": "extracted_verified",
-  "acquisition": "existing_steam_client_installation",
-  "steamcmd_download_completed": false,
+  "acquisition": "steamcmd",
+  "steamcmd_download_completed": true,
   "source_workshop_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3616255677",
   "source_archive_sha256": "d4189bce0f6eef1ab3b6b3e40043e949c0f1383a8f42d9acca693edeced40ced",
   "gma_header": {
