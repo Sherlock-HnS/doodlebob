@@ -1,0 +1,22 @@
+{
+  "id": "3616255677",
+  "name": "doodlebob",
+  "title": "[PILL PACK] DOODLEBOB",
+  "author": "Blastnit",
+  "status": "extracted_verified",
+  "acquisition": "existing_steam_client_installation",
+  "steamcmd_download_completed": false,
+  "source_workshop_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3616255677",
+  "source_archive_sha256": "d4189bce0f6eef1ab3b6b3e40043e949c0f1383a8f42d9acca693edeced40ced",
+  "gma_header": {
+    "title": "[PILL PACK]",
+    "description": "{\"title\":\"[PILL PACK]\",\"type\":\"npc\",\"tags\":[\"realism\",\"cartoon\",\"fun\"],\"ignore\":[]}",
+    "author": "Author Name",
+    "steam_id": "0",
+    "timestamp": 1764626560
+  },
+  "files": 65,
+  "payload_bytes": 41634555,
+  "roundtrip_verified": true,
+  "packaging_exclusions": []
+}

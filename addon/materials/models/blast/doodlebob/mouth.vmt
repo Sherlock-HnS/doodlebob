@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/blast/Doodlebob/mouth"
+     $translucent "1"
+}

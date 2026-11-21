@@ -1,0 +1,392 @@
+[
+  {
+    "path": "lua/autorun/doodlebob.lua",
+    "size": 689,
+    "crc": 214473528,
+    "sha256": "39df182794980bcf52c69b263d53e70400e25402a0f4fd28e868a5ba1f037e65"
+  },
+  {
+    "path": "lua/autorun/include/doodlebob_pill.lua",
+    "size": 10733,
+    "crc": 1826356155,
+    "sha256": "35315ad171bf0e231f2ea5a2d636f58ddeaace377c7a30239c388b16f4a12412"
+  },
+  {
+    "path": "lua/entities/doodle_bomb/cl_init.lua",
+    "size": 2098,
+    "crc": 768234224,
+    "sha256": "0a3b7072927e1685551198d763032f5411b71697a7eb86523b2f752cd475c9f1"
+  },
+  {
+    "path": "lua/entities/doodle_bomb/init.lua",
+    "size": 1197,
+    "crc": 867908145,
+    "sha256": "d926825a5e7fa41905a7eebeedda6c452c3c9a6de18278dc0ea3116f7ae75cd8"
+  },
+  {
+    "path": "lua/entities/doodle_bomb/shared.lua",
+    "size": 112,
+    "crc": 1723450162,
+    "sha256": "76601383c50654f8165059facaa7bde77e63c05b4469198debe44d3bc5719d28"
+  },
+  {
+    "path": "lua/entities/doodle_bowling/cl_init.lua",
+    "size": 71,
+    "crc": 2747678187,
+    "sha256": "d51ed3eba192cdd5ac76923a01ad49769587f290cc1ce54a7765151a743b733c"
+  },
+  {
+    "path": "lua/entities/doodle_bowling/init.lua",
+    "size": 1853,
+    "crc": 3581337918,
+    "sha256": "1a734e1469277f830df6d6289c8dfca40902540013f9d7155c755fcd7c8de6b2"
+  },
+  {
+    "path": "lua/entities/doodle_bowling/shared.lua",
+    "size": 115,
+    "crc": 2398888673,
+    "sha256": "6175dba429de06f84f7ffa40259badc86c2a7d480d4d2e9d515f887a22cadbac"
+  },
+  {
+    "path": "lua/entities/doodle_portal/cl_init.lua",
+    "size": 747,
+    "crc": 2079574612,
+    "sha256": "60a75707c962a60fb057b064b7b9683a6613a7012668b0310f12853fa16ac965"
+  },
+  {
+    "path": "lua/entities/doodle_portal/init.lua",
+    "size": 300,
+    "crc": 2306598871,
+    "sha256": "34846371e624f3b1ed01bcecaf3c7498d29572b43187975f2964784785e635ed"
+  },
+  {
+    "path": "lua/entities/doodle_portal/shared.lua",
+    "size": 121,
+    "crc": 3234295247,
+    "sha256": "09662267d18dc53e22f3b3dc924eefd510effa342e5202ad8bf94560b621f398"
+  },
+  {
+    "path": "materials/doodle_bomb.png",
+    "size": 609060,
+    "crc": 2512428505,
+    "sha256": "ed722102e09d5f8e959c2b1256e59f4331da5fe1933c72651bc71856552ed940"
+  },
+  {
+    "path": "materials/doodle_bombent.png",
+    "size": 32420,
+    "crc": 1078043719,
+    "sha256": "5cc6b03e4d295eb085dd36b9c15871095dd75e0348038ac25f16f02aa13347e8"
+  },
+  {
+    "path": "materials/doodle_bowling.png",
+    "size": 646679,
+    "crc": 840933168,
+    "sha256": "587c00c985334f60aa381111332beb3f33593df40edda7294e07f4cd339e5237"
+  },
+  {
+    "path": "materials/doodle_highlight.png",
+    "size": 610317,
+    "crc": 4239280753,
+    "sha256": "eee0227d5ad5aa57950210e2ad326759176b1984e118273a1b429137f3cd8631"
+  },
+  {
+    "path": "materials/doodle_nightvision.png",
+    "size": 938903,
+    "crc": 2032232363,
+    "sha256": "26b3852f54b4b54190da68f4da57bbd7374a2bed8ff0e0b87c2624bc31f8b6b7"
+  },
+  {
+    "path": "materials/doodle_portal.png",
+    "size": 647376,
+    "crc": 2683858449,
+    "sha256": "8e2f58d7e4b89bb424838db5446e9459443f85b24c07e8e27dfc09e4820f0317"
+  },
+  {
+    "path": "materials/doodle_portal2.png",
+    "size": 646926,
+    "crc": 3079752646,
+    "sha256": "4d017ae917b78335b8a8c03f46fe97a58ac3ec29040381d4343e2c9fb9c2338a"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/black.vmt",
+    "size": 74,
+    "crc": 3469600292,
+    "sha256": "51d50cea1cd5e0da2baa668a3dd91b004e9cd5396bcae216432cbe918178cc3e"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/black.vtf",
+    "size": 1398336,
+    "crc": 4181352661,
+    "sha256": "ed805ebc5b07964ac8489bdc51e036003a66b2f2cd395adf1d766903558e9331"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/bowling.vmt",
+    "size": 79,
+    "crc": 3684525048,
+    "sha256": "50a2c164bbf28b019b786a264c049a2732300e920b2b9726869958663c04c02d"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/bowling.vtf",
+    "size": 1398336,
+    "crc": 1099912577,
+    "sha256": "4ff0b585876f718429ae74e2e06727307d5a6f7b9653e850bcd33c65be096801"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/brown_outline.vmt",
+    "size": 82,
+    "crc": 2039505658,
+    "sha256": "45ec40eee8196f7e8301cae74e1ae9ba3f0a07a57f030287cbbbecb945f64f80"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/brown_outline.vtf",
+    "size": 1398336,
+    "crc": 3932169398,
+    "sha256": "cac3eec6be39dca49b4afeb9c9f8fc44d5d7b8651572ad838b28442f10fd9ca5"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/material.vmt",
+    "size": 77,
+    "crc": 2448559321,
+    "sha256": "429fd48be165d83172042b3e6b792aefd3d3b1c936ab0951c39929ec5102650b"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/material.vtf",
+    "size": 1398336,
+    "crc": 1153388712,
+    "sha256": "9d2ca5cb8bf4145f47ed6c5f36186358c3a6e8f96941ab629ff046a2d2317e54"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/mouth.vmt",
+    "size": 97,
+    "crc": 1756884680,
+    "sha256": "5eab16b188c1f3b0d52354d3b7bf4ffc582192d9e37aa3909a9b8ff645b6397c"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/mouth.vtf",
+    "size": 1398336,
+    "crc": 1053174192,
+    "sha256": "67e2a3c161806a8be25a4cf19bbdb685a9287c4b0f6262f2f00cf989dd772084"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/mouth2.vmt",
+    "size": 75,
+    "crc": 1130057362,
+    "sha256": "2ed1cfe39be6f0acf5757a5261edb8e7f03a5616687fad6ea5d6e147551ae877"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/mouth2.vtf",
+    "size": 5592612,
+    "crc": 1722471385,
+    "sha256": "591dbc01ccd221cd4c14f5e9c3272406889e32ac6200d6e6db9f3f57a2ed1506"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/outline.vmt",
+    "size": 76,
+    "crc": 1657648579,
+    "sha256": "9ca2d3890407f079fec83466ca21f4b9cf6f7e3d9bbe9bb7661e914aa1e718be"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/outline.vtf",
+    "size": 1398336,
+    "crc": 4181352661,
+    "sha256": "ed805ebc5b07964ac8489bdc51e036003a66b2f2cd395adf1d766903558e9331"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/pencil.vmt",
+    "size": 75,
+    "crc": 2615950807,
+    "sha256": "23553b90b79e75380f66727b8453f390563e7c490d03650003e53ef9e19704da"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/pencil.vtf",
+    "size": 1398336,
+    "crc": 1115265033,
+    "sha256": "ec892146de6370e00b1c34b9e5a23adce2d9e5c621d47b52b027f7bf6b934893"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/red-outline.vmt",
+    "size": 80,
+    "crc": 831748081,
+    "sha256": "94ae8ff8babc89876c51e325599fe6a2852e8222014a86077eb5f8cf5df5e9de"
+  },
+  {
+    "path": "materials/models/blast/doodlebob/red-outline.vtf",
+    "size": 1398336,
+    "crc": 1231086429,
+    "sha256": "1f51f7e936a46f082f572296a2926584d8c2b819f4bb7c65781dcdb49b72c358"
+  },
+  {
+    "path": "materials/obelisk_blind.png",
+    "size": 34265,
+    "crc": 2761028880,
+    "sha256": "e9c4e95a59c242254a1f720e1c2768e08c15f705990280c58eebd0eecf4e221b"
+  },
+  {
+    "path": "materials/obelisk_sprint.png",
+    "size": 41660,
+    "crc": 446486608,
+    "sha256": "453f737c0733cf42db7019933b50d1448043e63a98de72b9d28509e27ab8fea4"
+  },
+  {
+    "path": "materials/obelisk_teleport.png",
+    "size": 40505,
+    "crc": 3271545008,
+    "sha256": "1ed9e48b6885d06a3fa6a8cfd92b9abe34802314803f18b39bc311b75fd9239a"
+  },
+  {
+    "path": "materials/obelisk_wall.png",
+    "size": 37856,
+    "crc": 3135532457,
+    "sha256": "1ab910a8bafd6cb8e5d9f6bd241338dd4acbeff45df46a98500d6f91ce2390bd"
+  },
+  {
+    "path": "models/blast/bowlingball.dx90.vtx",
+    "size": 24983,
+    "crc": 3293285082,
+    "sha256": "88de7d268fb95e228ad7778f1394f46138067f0deb71c9c3a008ccc64df38e20"
+  },
+  {
+    "path": "models/blast/bowlingball.mdl",
+    "size": 2012,
+    "crc": 3941874547,
+    "sha256": "8ef866dbefcb2c8ac083182b284d9dc11ac7cf138145df41fc80d75656d79582"
+  },
+  {
+    "path": "models/blast/bowlingball.phy",
+    "size": 23351,
+    "crc": 238661921,
+    "sha256": "437a64c5372b893e8771718d5e715ae2839af8191305bcb1aa47133b36f17b3b"
+  },
+  {
+    "path": "models/blast/bowlingball.vvd",
+    "size": 83840,
+    "crc": 1686998584,
+    "sha256": "d10efec000e4b6e3046cb8e3037efb41801c1632f8dcf1eaa9cbd16e8dc2a944"
+  },
+  {
+    "path": "models/blast/doodlebob.dx90.vtx",
+    "size": 52613,
+    "crc": 2320627779,
+    "sha256": "10b78e1bba83a4f1416d5f26aa9d9346b4db780672bc8d18421071ea35252cfd"
+  },
+  {
+    "path": "models/blast/doodlebob.mdl",
+    "size": 238912,
+    "crc": 1920995203,
+    "sha256": "38a2d18e0d0a8d8366a80fda633dd55f2916877421b66c7d6ea62e6bc08c9f63"
+  },
+  {
+    "path": "models/blast/doodlebob.vvd",
+    "size": 191360,
+    "crc": 4248737194,
+    "sha256": "cfc8efffa4bab0b5f4538d0c19e3baefb083f09a519b82d31fe3ef2388e2814a"
+  },
+  {
+    "path": "resource/fonts/krabby-patty.ttf",
+    "size": 18828,
+    "crc": 1056297622,
+    "sha256": "fb66b54921ac25d586856bd5eda28552c0922648b2e4cf0b3ce8b3f773ce6f2d"
+  },
+  {
+    "path": "sound/doodle_bomb.wav",
+    "size": 613444,
+    "crc": 3379300576,
+    "sha256": "afa1bc4db1e8941c41eeb9ad9548d2c0111558a54758689d7ff95093357e8be6"
+  },
+  {
+    "path": "sound/doodle_bowling.wav",
+    "size": 541944,
+    "crc": 4138893715,
+    "sha256": "fbdaa99a2f6e3c2d039f9d76e68e2c0b339cbe5636bfbfa6bdfa62d79856cfd7"
+  },
+  {
+    "path": "sound/doodle_bowlinghit.wav",
+    "size": 493960,
+    "crc": 3625773181,
+    "sha256": "17b7f641f3f7f9b1f742e9436935e8470381f595829e8555eb59c9117580c61b"
+  },
+  {
+    "path": "sound/doodle_highlight.wav",
+    "size": 536188,
+    "crc": 2682842601,
+    "sha256": "855211b20cc9cd1c275f9eef6e6ebbf9b87785c1d40a5c72e925bd5c7c5b05bf"
+  },
+  {
+    "path": "sound/doodle_highlight2.wav",
+    "size": 355256,
+    "crc": 3753480448,
+    "sha256": "73c860f81e9f188f30188909f1ec9b6872b6a49f03f4f26a31b508869db9da78"
+  },
+  {
+    "path": "sound/doodle_kill.wav",
+    "size": 1204268,
+    "crc": 1980808416,
+    "sha256": "834ca2303576d2a552d4b4f20c06b9b2bbc9924b794f97592a68dc8f39c2f90e"
+  },
+  {
+    "path": "sound/doodle_portal_enter.wav",
+    "size": 752680,
+    "crc": 1094568608,
+    "sha256": "dd7f9c17fc0df399aa3d82c33a27b5ee8b7360f9a275522000bcb81f581533a1"
+  },
+  {
+    "path": "sound/doodle_portal_exit.wav",
+    "size": 658600,
+    "crc": 4093055545,
+    "sha256": "815356aa5b16e66696572cb21cd485bebf9a586fb952203dab58855a8c8ec7d8"
+  },
+  {
+    "path": "sound/doodle_walk1.wav",
+    "size": 53240,
+    "crc": 1248419832,
+    "sha256": "54f6c05c789da0c9e90963f94c8584df21ed7388f248e28aaeed804a480b0fae"
+  },
+  {
+    "path": "sound/doodle_walk2.wav",
+    "size": 41468,
+    "crc": 532323985,
+    "sha256": "3f70e11921955319a607be01bd97d3c23278f4ea1a3e6536cd28e84071cf0f10"
+  },
+  {
+    "path": "sound/obelisk_fog.wav",
+    "size": 770184,
+    "crc": 3180089528,
+    "sha256": "ff1808e3225eca00593af8f38dee2209fb756cc87e285137ae0c18c98f267d46"
+  },
+  {
+    "path": "sound/obelisk_kill.wav",
+    "size": 1610846,
+    "crc": 3121742261,
+    "sha256": "7cf1ad643e4c3b7cbc333a0d746df7f7861cda361d1c6618d0b0ebb75a4d5b28"
+  },
+  {
+    "path": "sound/obelisk_mumbling.wav",
+    "size": 10491608,
+    "crc": 1865129406,
+    "sha256": "9c24f2007cf2631d020342557557ddec4924a47a1578751fe94464270b63df80"
+  },
+  {
+    "path": "sound/obelisk_shadow.wav",
+    "size": 340256,
+    "crc": 66495990,
+    "sha256": "e581f367192692261210df03d1cfb24bccdd1ee9632766a3b0843e5e8c3f5338"
+  },
+  {
+    "path": "sound/obelisk_sprint.wav",
+    "size": 663512,
+    "crc": 237509505,
+    "sha256": "fe45e163b5aa95c2aa5e9d8e4b89363467f2c13bcc866aae4c68199c649b7693"
+  },
+  {
+    "path": "sound/obelisk_teleport.wav",
+    "size": 393464,
+    "crc": 1919628551,
+    "sha256": "b0f1645527f3d85cfcbc46d3f1bd42a4e9aa6b4c9ec7f09ceeee968e5522f6bf"
+  },
+  {
+    "path": "sound/obelisk_wall.wav",
+    "size": 393720,
+    "crc": 492386429,
+    "sha256": "626d4c87603c59356d32ca0f81f08a293d0c5db2b8a2e4f545de65789c048007"
+  }
+]
