@@ -29,6 +29,8 @@ pk_pills.register('pill_doodlebob', {
         {
             name = "Night Vision",
             key = KEY_F,
+            hnsKeyLabel = "F",
+            hnsIcon = "doodle_nightvision.png",
             cooldown = 1,
             mat = Material("doodle_nightvision.png", "smooth"),
             func = function(ply, pill) end -- Client Stuff
@@ -36,6 +38,8 @@ pk_pills.register('pill_doodlebob', {
         {
             name = "Portal",
             key = KEY_T,
+            hnsKeyLabel = "T",
+            hnsIcon = "doodle_portal2.png",
             cooldown = 40,
             mat = Material("doodle_portal2.png", "smooth"),
             func = function(ply, pill)
@@ -52,11 +56,7 @@ pk_pills.register('pill_doodlebob', {
                     pill:PillAnim("portal_exit", true)
                     pill:PillSound("portal_exit")
 
-                    pillTbl.moveSpeed.walk = 1
-                    pillTbl.moveSpeed.run = 1
-                    pillTbl.moveSpeed.ducked = 1
-
-                    SlashModules.UpdateStats(ply)
+                    pk_pills.setCostumeMoveSpeed(pill, 1, 1, 1)
 
                     timer.Simple(0.25, function()
                         local tr = util.TraceLine({
@@ -82,11 +82,7 @@ pk_pills.register('pill_doodlebob', {
                     end)
 
                     timer.Simple(3, function()
-                        pillTbl.moveSpeed.walk = 200
-                        pillTbl.moveSpeed.run = 600
-                        pillTbl.moveSpeed.ducked = 150
-        
-                        SlashModules.UpdateStats(ply)
+                        pk_pills.setCostumeMoveSpeed(pill, 200, 600, 150)
                     end)
                 else
                     pillTbl.muteSteps = true
@@ -94,11 +90,7 @@ pk_pills.register('pill_doodlebob', {
                     pill:PillSound("portal_enter")
                     pill:SetCollisionGroup(COLLISION_GROUP_IN_VEHICLE)
                     
-                    pillTbl.moveSpeed.walk = 1
-                    pillTbl.moveSpeed.run = 1
-                    pillTbl.moveSpeed.ducked = 1
-    
-                    SlashModules.UpdateStats(ply)
+                    pk_pills.setCostumeMoveSpeed(pill, 1, 1, 1)
 
                     timer.Simple(0.25, function()
                         local tr = util.TraceLine({
@@ -126,11 +118,7 @@ pk_pills.register('pill_doodlebob', {
                     timer.Simple(2.7, function()
                         puppet:SetColor(ColorAlpha(color_white, 0))
     
-                        pillTbl.moveSpeed.walk = 1000
-                        pillTbl.moveSpeed.run = 2500
-                        pillTbl.moveSpeed.ducked = 1000
-    
-                        SlashModules.UpdateStats(ply)
+                        pk_pills.setCostumeMoveSpeed(pill, 1000, 2500, 1000)
     
                         timer.Simple(5, function()
                             SlashModules.PillAbility(ply, "Portal")
@@ -144,15 +132,18 @@ pk_pills.register('pill_doodlebob', {
         {
             name = "Highlight",
             key = KEY_R,
+            hnsKeyLabel = "R",
+            hnsIcon = "doodle_highlight.png",
             cooldown = 60,
             mat = Material("doodle_highlight.png", "smooth"),
             func = function(ply, pill)
-                if pill:GetCollisionGroup() == COLLISION_GROUP_IN_VEHICLE then return end
+                if pill:GetCollisionGroup() == COLLISION_GROUP_IN_VEHICLE then return false end
                 
                 for k, v in ipairs(player.GetAll()) do
                     if IsValid(v.pk_pill_ent) then continue end
+                    if SherlockHNS and not SherlockHNS.CanTarget(v, ply) then continue end
 
-                    v:HangEffect({
+                    SlashModules.ApplyTargetEffect(v, ply, {
                         name = "Highlighted",
                         time = 10,
                     })
@@ -170,10 +161,12 @@ pk_pills.register('pill_doodlebob', {
         {
             name = "Bowling",
             key = KEY_B,
+            hnsKeyLabel = "B",
+            hnsIcon = "doodle_bowling.png",
             cooldown = 25,
             mat = Material("doodle_bowling.png", "smooth"),
             func = function(ply, pill)
-                if pill:GetCollisionGroup() == COLLISION_GROUP_IN_VEHICLE then return end
+                if pill:GetCollisionGroup() == COLLISION_GROUP_IN_VEHICLE then return false end
 
                 timer.Simple(.7, function()
                     local bowling = ents.Create("doodle_bowling")
@@ -193,10 +186,12 @@ pk_pills.register('pill_doodlebob', {
         {
             name = "Trap",
             key = KEY_G,
+            hnsKeyLabel = "G",
+            hnsIcon = "doodle_bomb.png",
             cooldown = 40,
             mat = Material("doodle_bomb.png", "smooth"),
             func = function(ply, pill)
-                if pill:GetCollisionGroup() == COLLISION_GROUP_IN_VEHICLE then return end
+                if pill:GetCollisionGroup() == COLLISION_GROUP_IN_VEHICLE then return false end
                 
                 local totalBombs = ents.FindByClass("doodle_bomb")
                 if #totalBombs >= 3 then totalBombs[1]:Remove() end
@@ -280,7 +275,7 @@ pk_pills.register('pill_doodlebob', {
         func = function(ply, ent)
             if ent:GetCollisionGroup() == COLLISION_GROUP_IN_VEHICLE then return end
 
-            SlashModules.JumpscareV2(ply, {
+            return SlashModules.JumpscareV2(ply, {
                 time = 4,
                 bloodImpacts = {
                     4,
@@ -298,7 +293,15 @@ pk_pills.register('pill_doodlebob', {
     flashlight = function(ply, ent)
     end,
     jump = function(ply, ent) end,
-})
+}, function(form)
+    -- The legacy damage branches are for Sandbox and NPCs.
+    form.hnsKillAPI = true
+    form.hnsAbilities = {
+        { id = "attack", name = "Ataque", key = IN_ATTACK, OnUse = form.attack.func },
+    }
+    form.attack, form.attack2, form.reload = nil, nil, nil
+    SlashModules.ConfigureHNSAbilities(form)
+end)
 
 hook.Add("PlayerStepSoundTime", "Doodlebob", function(ply, foottype, walking)
     local ent = ply.pk_pill_ent

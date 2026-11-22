@@ -17,7 +17,12 @@ function ENT:Initialize()
 end
 
 function ENT:ExplodePlayer(ply)
-    ply:TakeDamage(25, self:GetOwner())
+    if SherlockHNS then
+        local owner = self:GetOwner()
+        if not IsValid(owner) or not SherlockHNS.Kill(ply, owner, { reason = "projectile", inflictor = self }) then return end
+    else
+        ply:TakeDamage(25, self:GetOwner())
+    end
     ply:EmitSound("doodle_bowlinghit.wav")
 end
 
@@ -65,6 +70,12 @@ function ENT:Think()
         ang.p = 0
     end
 
+    if SherlockHNS then
+        local mins, maxs = self:OBBMins(), self:OBBMaxs()
+        for _, target in ipairs(ents.FindAlongRay(self:GetPos(), pos + moveSpeed, mins, maxs)) do
+            self:StartTouch(target)
+        end
+    end
     self:SetAngles(ang)
     self:SetPos(pos + moveSpeed + Vector(0, 0, self:OBBMaxs().z/2*self:GetModelScale()))
 

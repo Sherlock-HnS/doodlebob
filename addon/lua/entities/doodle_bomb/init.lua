@@ -31,6 +31,11 @@ function ENT:ExplodePlayer(ply)
         util.Effect("Explosion", effectdata)
     end)
 
+    if SherlockHNS then
+        SherlockHNS.Kill(ply, self:GetOwner(), { reason = "trap", inflictor = self })
+        self:Remove()
+        return
+    end
     ply:HangEffect({
         name = "Cartoony",
         time = 10,
@@ -46,6 +51,19 @@ function ENT:StartTouch(ent)
     if self.TOUCHED or !IsValid(ent) or !ent:IsPlayer() then return end
     if IsValid(ent.pk_pill_ent) then return end
 
+    if SherlockHNS and (not IsValid(self:GetOwner()) or not SherlockHNS.CanTarget(ent, self:GetOwner())) then return end
     self.TOUCHED = true
     self:ExplodePlayer(ent)
+end
+
+function ENT:Think()
+    if SherlockHNS and not self.TOUCHED then
+        local mins, maxs = self:WorldSpaceAABB()
+        for _, target in ipairs(ents.FindInBox(mins, maxs)) do
+            self:StartTouch(target)
+            if self.TOUCHED then break end
+        end
+    end
+    self:NextThink(CurTime() + 0.1)
+    return true
 end
